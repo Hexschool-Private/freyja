@@ -1,5 +1,5 @@
 import { Router } from 'express';
-// import admin from './api/v1/admin';
+import admin from './api/v1/admin';
 import home from './api/v1/home';
 import orders from './api/v1/orders';
 import rooms from './api/v1/rooms';
@@ -53,6 +53,6 @@ routes.use(
     orders
 );
 
-// routes.use('/api/v1/admin', admin);
+routes.use('/api/v1/admin', admin);
 
 export default routes;
